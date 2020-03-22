@@ -3,11 +3,7 @@ import backgroundImage from '../../people.png';
 
 import './signIn.css';
 
-export default class SignIn extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
+class SignIn extends React.Component {
     render() {
         console.log(this.props);
         return (
@@ -22,11 +18,11 @@ export default class SignIn extends React.Component {
                             <span className='login100-form-title p-b-53'>
                                 Sign In With
 					</span>
-                            <a href='#' className='btn-face m-b-20'>
+                            <a href='http://facebook.com' className='btn-face m-b-20'>
                                 <i className='fa fa-facebook-official'></i>
                                 Facebook
 					</a>
-                            <a href='#' className='btn-google m-b-20'>
+                            <a href='https://google.com' className='btn-google m-b-20'>
                                 <img src='images/icons/icon-google.png' alt='GOOGLE'></img>
                                 Google
 					</a>
@@ -45,7 +41,7 @@ export default class SignIn extends React.Component {
                                     Password
 						</span>
 
-                                <a href='#' className='txt2 bo1 m-l-5'>
+                                <a href='/forgotpass' className='txt2 bo1 m-l-5'>
                                     Forgot?
 						</a>
                             </div>
@@ -65,7 +61,7 @@ export default class SignIn extends React.Component {
                                     Not a member?
 						</span>
 
-                                <a href='#' className='txt2 bo1'>
+                                <a href='/signup' className='txt2 bo1'>
                                     Sign up now
 						</a>
                             </div>
@@ -76,3 +72,5 @@ export default class SignIn extends React.Component {
         );
     }
 }
+
+export default SignIn

@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Slider from './components/slider/slider';
+// import Slider from './components/slider/slider';
 import ProductService from './Service/productService';
 import SlidingPage from './components/slidingPage/slidingPage';
 import NavigationBar from './components/navigationBar/navigationBar';

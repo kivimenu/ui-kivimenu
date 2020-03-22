@@ -9,7 +9,7 @@ export default function ItemDetails(props) {
   let product = {};
 
   props.products.some(item => {
-    if (item.id == id) {
+    if (item.id === id) {
       product = item;
     }
   });
@@ -21,7 +21,7 @@ export default function ItemDetails(props) {
           {(product.contents || []).map((item, index) => {
             return (
               <div>
-                <img src={'http://' + item.relativePath} width="100%" />
+                <img alt="lugo" src={'http://' + item.relativePath} width="100%" />
               </div>
             );
           })}
@@ -31,7 +31,7 @@ export default function ItemDetails(props) {
         </div>
       </div>
       <BottomNavBar>
-        <div className="col-3">{product.unitPrice + " TL"}</div>
+        <div className="col-3">{product.unitPrice + " ₺"}</div>
         <button className="order-btn col-3 h-100 offset-6 ">Order</button>
       </BottomNavBar>
     </div>

@@ -1,10 +1,11 @@
 import './navigationBar.css';
-import logo from '../../food.svg';
+import logo from '../../dish.svg';
 
 import React from 'react';
-import { Route, Switch, Link } from 'react-router-dom';
-import SignIn from '../signIn/signIn';
-import App from '../../App';
+import { Link } from 'react-router-dom';
+// import { Route, Switch, Link } from 'react-router-dom';
+// import SignIn from '../signIn/signIn';
+// import App from '../../App';
 
 export default class NavigationBar extends React.Component {
   constructor(props) {
@@ -27,10 +28,11 @@ export default class NavigationBar extends React.Component {
       <div>
         <nav role="navigation">
           <div id="menuToggle">
+            {/* burasi editlendi onClick di onChange yapıldı */}
             <input
               type="checkbox"
               checked={this.state.isExpand}
-              onClick={this.toggleMenu}
+              onChange={this.toggleMenu}
             />
             <span></span>
             <span></span>
@@ -58,7 +60,7 @@ export default class NavigationBar extends React.Component {
               </li>
             </ul>
           </div>
-          <img src={logo} />
+          <img src={logo} alt="its lugo" />
         </nav>
       </div>
     );

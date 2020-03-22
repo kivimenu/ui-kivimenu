@@ -3,12 +3,7 @@ import React from 'react';
 import "./itemBox.css";
 import { Link } from 'react-router-dom';
 
-export default class ItemBox extends React.Component {
-    constructor(props) {
-        super(props);
-
-    }
-
+class ItemBox extends React.Component {
     render() {
         return (
 
@@ -17,15 +12,18 @@ export default class ItemBox extends React.Component {
             </Link>
                 <div className="container name">{this.props.card.name}</div>
                 <div className="container details">
+                <small>Açıklama:Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</small>
+                <hr/>
                     <div className="d-flex flex-row detailsWrapper align-items-center">
-                        <div className="duration text-left">45 mins</div>
-                        <div className="ingredients  text-left">4 ingredients</div>
+                        <div className="duration text-left">{this.props.card.unitPrice} ₺</div>
+                        <div className="ingredients button text-center ml-auto rounded-sm">4 ingredients</div>
                         <button className="button text-center ml-auto rounded-sm">+  Order</button>
                     </div>
-
                 </div>
             </div>
 
         );
     }
 }
+
+export default ItemBox

@@ -3,11 +3,7 @@ import React from 'react';
 import './slidingPage.css';
 import ItemBox from '../itemBox/itemBox';
 
-export default class SlidingPage extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
+class SlidingPage extends React.Component {
   render() {
     return (
       <div className="page container-fluid">
@@ -24,3 +20,4 @@ export default class SlidingPage extends React.Component {
     );
   }
 }
+export default SlidingPage
