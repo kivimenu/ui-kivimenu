@@ -1,9 +1,9 @@
 import React from 'react';
 import backgroundImage from '../../people.png';
 
-import './signIn.css';
+import './signUp.css';
 
-class SignIn extends React.Component {
+class SignUp extends React.Component {
     render() {
         console.log(this.props);
         return (
@@ -16,15 +16,26 @@ class SignIn extends React.Component {
                     <div className='wrap-login100 p-l-110 p-r-110 p-t-62 p-b-33'>
                         <form className='login100-form validate-form flex-sb flex-w'>
                             <span className='login100-form-title p-b-53'>
-                                Giriş Yap
+                                Kayıt ol
 					        </span>
-                            <a href='http://facebook.com' className='btn-face m-b-20'>
-                                <i className='fa fa-facebook-official'></i>
-                                Facebook
-					        </a>
-                            <a href="https://google.com" className="btn-google m-b-20">
-                                <img src="http://ill-informed-hall.surge.sh/images/icons/icon-google.png" alt="Goo" /> Google
-					         </a>
+                            <div className='p-t-31 p-b-9'>
+                                <span className='txt1'>
+                                    Adınız
+						        </span>
+                            </div>
+                            <div className='wrap-input100 validate-input' data-validate='Ad is required'>
+                                <input className='input100' type='text' name='adiniz' ></input>
+                                <span className='focus-input100'></span>
+                            </div>
+                            <div className='p-t-31 p-b-9'>
+                                <span className='txt1'>
+                                    Soyadınız
+						        </span>
+                            </div>
+                            <div className='wrap-input100 validate-input' data-validate='Soyad is required'>
+                                <input className='input100' type='text' name='soyadiniz' ></input>
+                                <span className='focus-input100'></span>
+                            </div>
                             <div className='p-t-31 p-b-9'>
                                 <span className='txt1'>
                                     Kullanıcı Adı
@@ -51,17 +62,16 @@ class SignIn extends React.Component {
 
                             <div className='container-login100-form-btn m-t-17'>
                                 <button className='login100-form-btn'>
-                                    Oturum Aç
-						</button>
+                                    Üye ol
+						        </button>
                             </div>
-
                             <div className='w-full text-center p-t-55'>
                                 <span className='txt2'>
-                                    Henüz üye değilsen
+                                    Zaten bir üyeliğin varsa
 						        </span>
                                 <br />
-                                <a href='/signup' className='txt2 bo1'>
-                                    Hemen kaydol
+                                <a href='/signin' className='txt2 bo1'>
+                                    Hemen Oturum Aç!
 						        </a>
                             </div>
                         </form>
@@ -72,4 +82,4 @@ class SignIn extends React.Component {
     }
 }
 
-export default SignIn
+export default SignUp

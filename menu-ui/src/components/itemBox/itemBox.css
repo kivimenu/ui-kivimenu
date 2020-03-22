@@ -36,6 +36,7 @@
 }
 
 .itemBox .details .button {
+    display: flex;
     padding-left: 10px;
     padding-right: 10px;
     color: #30be76;
@@ -48,3 +49,28 @@ img {
     border-bottom-left-radius: 0;
     object-fit: cover;
 }
+
+
+  .quantity__minus,
+  .quantity__plus {
+    display: block;
+    width: 22px;
+    height: 23px;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+    line-height: 23px;
+  }
+  .quantity__minus:hover,
+  .quantity__plus:hover {
+    background: #ff921ec9;
+    color: #000000;
+  } 
+
+  .quantity__input {
+    width: 18px;
+    height: auto;
+    margin: 0px;
+    text-align: center;
+    color: #8184a1;
+  }

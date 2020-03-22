@@ -40,22 +40,22 @@ export default class NavigationBar extends React.Component {
             <ul id="menu">
               <li>
                 <Link to="/signin" onClick={this.updateNavigation}>
-                  Sign in
+                  Oturum aç
+                </Link>
+              </li>
+              <li>
+                <Link to="/signin" onClick={this.updateNavigation}>
+                  Üye ol
                 </Link>
               </li>
               <li>
                 <Link to="/" onClick={this.updateNavigation}>
-                  Search
+                  Nasıl kullanılır?
                 </Link>
               </li>
               <li>
                 <Link to="/" onClick={this.updateNavigation}>
-                  Info
-                </Link>
-              </li>
-              <li>
-                <Link to="/" onClick={this.updateNavigation}>
-                  Home
+                  Anasayfa
                 </Link>
               </li>
             </ul>
