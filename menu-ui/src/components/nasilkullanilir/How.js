@@ -5,25 +5,24 @@ class How extends Component {
     render() {
         return (
             <div>
-                <h1>Responsive CSS Tabs</h1>
                 <div className="tab_container">
                     <input id="tab1" type="radio" name="tabs" defaultChecked/>
-                    <label htmlFor="tab1"><i className="fa fa-code"></i><span>Code</span></label>
+                    <label htmlFor="tab1"><i className="fa fa-wifi"></i><span>Bağlan</span></label>
 
                     <input id="tab2" type="radio" name="tabs" />
-                    <label htmlFor="tab2"><i className="fa fa-pencil-square-o"></i><span>About</span></label>
+                    <label htmlFor="tab2"><i className="fa fa-sign-in"></i><span>Giriş Yap</span></label>
 
                     <input id="tab3" type="radio" name="tabs" />
-                    <label htmlFor="tab3"><i className="fa fa-bar-chart-o"></i><span>Services</span></label>
+                    <label htmlFor="tab3"><i className="fa fa-mouse-pointer"></i><span>Seç</span></label>
 
                     <input id="tab4" type="radio" name="tabs" />
-                    <label htmlFor="tab4"><i className="fa fa-folder-open-o"></i><span>Portfolio</span></label>
+                    <label htmlFor="tab4"><i className="fa fa-credit-card"></i><span>Ödeme Yap</span></label>
 
                     <input id="tab5" type="radio" name="tabs" />
-                    <label htmlFor="tab5"><i className="fa fa-envelope-o"></i><span>Contact</span></label>
+                    <label htmlFor="tab5"><i className="fa fa-check-circle"></i><span>Afiyet Olsun</span></label>
 
                     <section id="content1" className="tab-content">
-                        <h3>Headline 1</h3>
+                        <h3>Wi-fi yoluyla menu'ye bağlan</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -38,7 +37,7 @@ class How extends Component {
                     </section>
 
                     <section id="content2" className="tab-content">
-                        <h3>Headline 2</h3>
+                        <h3>Giriş Yap veya Uye Ol</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 		      	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
@@ -51,7 +50,7 @@ class How extends Component {
                     </section>
 
                     <section id="content3" className="tab-content">
-                        <h3>Headline 3</h3>
+                        <h3>Dilediğini Seç</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -67,7 +66,7 @@ class How extends Component {
                     </section>
 
                     <section id="content4" className="tab-content">
-                        <h3>Headline 4</h3>
+                        <h3>Istediğin An Ödeme Yap</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 		      	tempor incididunt ut labore et dolore magna aliqua.</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -82,7 +81,7 @@ class How extends Component {
                     </section>
 
                     <section id="content5" className="tab-content">
-                        <h3>Headline 5</h3>
+                        <h3>Ve yemeğini afiyetle ye</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 		      	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
@@ -94,14 +93,15 @@ class How extends Component {
 		      	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </section>
                 </div>
-
+                <br />
                 <p className="no_wrap">
-                    And Of-course this paragrapgh with not wrap Tab
+                    Öğrendiniz mi?
                 </p>
 
                 <p className="link">
-                    Just in case you want to go through the tutorial follow this link: <a href="http://www.sevensignature.com/blog/code/responsive-pure-css-tabs/">Responsive Pure CSS Tabs</a>
+                   Tam olarak Nasıl kullanıldığını öğrendiyseniz: <a href="/signin">Hemen Oturum açın!</a>
                 </p>
+                <br/>
             </div>
         )
     }
