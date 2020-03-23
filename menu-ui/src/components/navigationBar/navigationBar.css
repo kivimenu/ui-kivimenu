@@ -117,3 +117,8 @@ nav {
 #menuToggle input:checked~ul {
     transform: none;
 }
+
+.menuLogo {
+    width: 35%;
+    margin: auto 68px auto
+}

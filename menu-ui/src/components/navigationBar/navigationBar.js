@@ -1,6 +1,8 @@
 import './navigationBar.css';
 import logo from '../../dish.svg';
 
+import MenuLogo from '../../img/logo.png'
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 // import { Route, Switch, Link } from 'react-router-dom';
@@ -38,18 +40,19 @@ export default class NavigationBar extends React.Component {
             <span></span>
             <span></span>
             <ul id="menu">
+              <img src={MenuLogo} alt="kivimenu"  className="menuLogo"/>
               <li>
                 <Link to="/signin" onClick={this.updateNavigation}>
                   Oturum aç
                 </Link>
               </li>
               <li>
-                <Link to="/signin" onClick={this.updateNavigation}>
+                <Link to="/signup" onClick={this.updateNavigation}>
                   Üye ol
                 </Link>
               </li>
               <li>
-                <Link to="/" onClick={this.updateNavigation}>
+                <Link to="/nasilkullanilir" onClick={this.updateNavigation}>
                   Nasıl kullanılır?
                 </Link>
               </li>

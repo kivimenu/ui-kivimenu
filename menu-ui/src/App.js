@@ -8,6 +8,7 @@ import CategoryBar from './components/categoryBar/categoryBar';
 import { Route, Switch } from 'react-router-dom';
 import SignIn from './components/signIn/signIn';
 import SignUp from './components/signUp/signUp';
+import How from './components/nasilkullanilir/How';
 import ItemDetails from './components/itemDetails/itemDetails';
 
 export default class App extends React.Component {
@@ -71,6 +72,9 @@ export default class App extends React.Component {
           </Route>
           <Route path="/signup">
             <SignUp/>
+          </Route>
+          <Route path="/nasilkullanilir">
+            <How/>
           </Route>
           <Route path="/">
             <CategoryBar
